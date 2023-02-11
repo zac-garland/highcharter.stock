@@ -1,0 +1,19 @@
+dependencies:
+  - name: highcharterStock
+    version: 1.0.1
+    src: htmlwidgets/lib
+    script:
+      - highstock.js
+      - data.js
+      - indicators-all.js
+      - drag-panes.js
+      - annotations-advanced.js
+      - price-indicator.js
+      - full-screen.js
+      - stock-tools.js
+      - heikinashi.js
+      - hollowcandlestick.js
+      - accessibility.js
+    stylesheet:
+      - gui.css
+      - popup.css
