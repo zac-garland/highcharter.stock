@@ -1,5 +1,5 @@
 HTMLWidgets.widget({
-  name: "highcharterStock",
+  name: "highchartStock",
 
   type: "output",
 

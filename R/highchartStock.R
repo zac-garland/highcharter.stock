@@ -19,7 +19,7 @@ highchartStock <- function(ticker = "AAPL",..., width = NULL, height = NULL, ele
     x,
     width = width,
     height = height,
-    package = 'highcharter.stock',
+    package = 'highchart.stock',
     elementId = elementId
   )
 }
@@ -42,7 +42,7 @@ highchartStock <- function(ticker = "AAPL",..., width = NULL, height = NULL, ele
 #'
 #' @export
 highchartStockOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'highchartStock', width, height, package = 'highcharter.stock')
+  htmlwidgets::shinyWidgetOutput(outputId, 'highchartStock', width, height, package = 'highchart.stock')
 }
 
 #' @rdname highchartStock-shiny

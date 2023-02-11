@@ -1,5 +1,5 @@
 dependencies:
-  - name: highcharterStock
+  - name: highchartStock
     version: 1.0.1
     src: htmlwidgets/lib
     script:
