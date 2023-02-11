@@ -12,3 +12,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Depends: 
     tidyquant
+URL: https://github.com/zac-garland/highcharter.stock
+BugReports: https://github.com/zac-garland/highcharter.stock/issues
