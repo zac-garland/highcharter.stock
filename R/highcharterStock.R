@@ -5,11 +5,12 @@
 #' @import htmlwidgets
 #'
 #' @export
-highcharterStock <- function(data = jsonlite::fromJSON("https://demo-live-data.highcharts.com/aapl-c.json"), width = NULL, height = NULL, elementId = NULL) {
+highcharterStock <- function(ticker = "AAPL",..., width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
-    data = data
+    data = tidyquant::tq_get(ticker,...) %>% mutate(date = as.numeric(as.POSIXct(date))*1000) %>%
+      jsonlite::toJSON()
   )
 
   # create widget

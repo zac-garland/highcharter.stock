@@ -5,8 +5,7 @@
 \title{Highcharts Stock Chart}
 \usage{
 highcharterStock(
-  data = jsonlite::fromJSON("https://demo-live-data.highcharts.com/aapl-c.json") \%>\%
-    data.frame() \%>\% as_tibble(),
+  ticker = "AAPL",
   width = NULL,
   height = NULL,
   elementId = NULL
